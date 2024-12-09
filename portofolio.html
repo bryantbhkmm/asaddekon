@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #efe9e9;
+            color: white;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav a {
+            color: rgb(16, 15, 15);
+            text-decoration: none;
+            margin-right: 20px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .home img {
+            max-width: 150px;
+            border-radius: 50%;
+            margin: 20px 0;
+        }
+        .home {
+            text-align: center;
+        }
+        .section {
+            margin: 50px 0;
+        }
+        .section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .pencapaian img {
+            max-width: 100%;
+            height: auto;
+            margin: 10px 0;
+        }
+        form label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #edeaea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        form button:hover {
+            background-color: #1d1b1b;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#catatan kriminal">catatan kriminal</a>
+        <a href="#kontak">Kontak</a>
+        <a href="#form">Form</a>
+    </nav>
+
+    <div class="container">
+        <!-- Home Section -->
+        <section id="home" class="home">
+           
+            <img src="C:\Users\Bryant\Pictures\Camera Roll\WIN_20241025_08_27_22_Pro.jpg" alt="Foto Saya">
+            <p>Halo! Nama saya Bryant, saya seorang kanisian kelas 9 di kanisius.</p>
+            <p>Saya memiliki pengalaman dalam memasak masak di pelajaran dengan kejeniusan saya. Saya juga suka olahraga hampir semua olahraga saya mainkan</p>
+        </section>
+
+        <!-- Pencapaian Section -->
+        <section id="catatan kriminal" class="catatan kriminal">
+            <h2>Catatan kriminal</h2>
+            <img src="juara harapan polda.jpg" alt="catatan kriminal 1">
+            <p>Juara Harapan Polda.</p>
+            <img src="juara 2 pl.jpg" alt="catatan kriminal 2">
+            <p>Juara 3 Pangudi Luhur Cup.</p>
+        </section>
+
+        <!-- Kontak Section -->
+        <section id="kontak" class="section kontak">
+            <h2>Kontak</h2>
+            <p>Email: <a href="9738bryant@kanisius.sch.id">9738bryant@kanisius.html</a></p>
+            <p>Telepon: +62 877 533 3255/p>
+        </section>
+
+        <!-- Form Section -->
+        <section id="form" class="section form-section">
+            <h2>Form</h2>
+            <form action="/submit" method="post">
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Pilih Gender</option>
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                </select>
+
+                <label for="pesan">Pesan:</label>
+                <textarea id="pesan" name="pesan" rows="5" required></textarea>
+
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
